@@ -1,18 +1,26 @@
 // CGI COMPETITION JS Meet up 14.05.2019 js questions' solutions
 
-// 1.
+/* Challenge 1
+   Implement hello() -function that returns string ‘Hello CGI’.
+*/
 function hello(string) {
   return string;
 }
-console.log(hello('WORLD'));
+console.log(hello('Hello CGI'));
 
-// 2.
+/* Challenge 2
+   Implement avg(numArray) -function that calculates the average of the table items. 
+   Items in the numArray are numbers.
+*/
 function average(numArray) {
   return numArray.reduce((total, value) => total + value, 0) / numArray.length;
 }
 console.log(average([2, 3, 5, 2]));
 
-// 3.
+/* Challenge 3
+   Implement reverse(wordsString) -function that gets a string as a parameter 
+   and returns a string with the words in the reverse order.
+*/
 function reverse(string) {
   string = string.split('');
   // const reverseArray = [];
@@ -24,7 +32,11 @@ function reverse(string) {
 }
 console.log(reverse('milk')); // klim
 
-// 4.
+/* Challenge 4
+   Implement validate(anyValue) -function that validates a parameter. 
+   If parameter value is integer and value is between 1 and 10, it should return true. 
+   In other cases it should return false.
+*/
 function validate(anyValue) {
   let parameter;
   if (Number.isInteger(anyValue) && anyValue > 0 && anyValue <= 10) {
@@ -36,12 +48,18 @@ function validate(anyValue) {
 }
 console.log(validate(2.6));
 
-// 5.
+/* Challenge 5
+   Implement traverse(root) -function that traverses a binary tree and calculates a sum of value attributes.
+   Each node have three attributes: value, left, right. Type of value attribute is a number.
+*/
 function traverse(root) {}
 
 traverse(4);
 
-// 6.
+/* Challenge 6
+   Implement cgiSort(wordArray) -function that gets string array as a parameter and returns sorted array. 
+   Order should be alphabetical but if there is word ‘CGI’ it should be first.Challenge 7
+*/
 function cgiSort(wordArray) {
   const sortedWordArray = wordArray.sort((a, b) => {
     if (a < b) {
@@ -59,7 +77,11 @@ function cgiSort(wordArray) {
 }
 console.log(cgiSort(['you', 'CGI', 'THEM', 'me', 'ab']));
 
-// 7. flatten an array
+/* 7 Challenge
+   Implement arrayJoin(twoDimensionalArray1, twoDimensionalArray2) -function that joins 
+   two dimensional arrays provided as parameters. Join type should be LEFT (similar to SQL LEFT JOIN). 
+   Implement join based on row numbers (join row 1 to row 1, row 2 to row 2 etc.).
+*/
 function arrayJoin(twoDimensionalArray1, twoDimensionalArray2) {
   const joinedArray = [];
   for (let i = 0; i < twoDimensionalArray1.length; i++) {
