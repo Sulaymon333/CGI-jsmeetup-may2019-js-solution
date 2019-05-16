@@ -58,7 +58,7 @@ traverse(4);
 
 /* Challenge 6
    Implement cgiSort(wordArray) -function that gets string array as a parameter and returns sorted array. 
-   Order should be alphabetical but if there is word ‘CGI’ it should be first.Challenge 7
+   Order should be alphabetical but if there is word ‘CGI’ it should be first.
 */
 function cgiSort(wordArray) {
   const sortedWordArray = wordArray.sort((a, b) => {
