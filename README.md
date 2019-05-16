@@ -1,4 +1,4 @@
-# CGI COMPETITION JS Meet up 14.05.2019
+# CGI competition JS Meetup 14.05.2019
 
 There was a competition at JS Meetup today (14.05.2019) with €100 reward for solving 7 javascript question provided by CGI since then hosted the monthly js meetup here in Helsinki. 
 
